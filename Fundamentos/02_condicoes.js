@@ -1,5 +1,5 @@
 /*
-* As condições em C são dadas por if, else if e else
+* As condições em JavaScript são dadas por if, else if e else
 * Detalhes:
 *    . Podemos ter if seguido de vários else if e um else final. Outro ponto é que você
 *    deve garantir que este else final é a última condição ou possibilidade restante de
