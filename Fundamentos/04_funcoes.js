@@ -43,5 +43,5 @@ Point.prototype.calcula = function() {
     );
 }
 
-// observe que mesmo a tendo criado o objeto point ele tambem passara a ter um metodo calcula
+// observe que mesmo ja tendo criado o objeto point ele tambem passara a ter um metodo calcula
 point.calcula() // retorna 1,414...
