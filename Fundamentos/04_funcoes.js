@@ -36,9 +36,12 @@ function Point(x, y) {
 let point = new Point(1, 1);
 
 // podemos definir novos metodos para objetos Point
-point.prototype.novo_metodo = function() {
+Point.prototype.calcula = function() {
     return Math.sqrt(
         this.x * this.x +
         this.y * this.y
     );
 }
+
+// observe que mesmo a tendo criado o objeto point ele tambem passara a ter um metodo calcula
+point.calcula() // retorna 1,414...
