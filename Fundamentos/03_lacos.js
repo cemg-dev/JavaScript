@@ -28,3 +28,6 @@ do{
     j++;
 } while(j < 10);
 
+let lista = [1, 2, 3, 4, 5];
+lista.forEach((i) => {1 += i});
+console.log(lista);
