@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Atividades</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-theme">
+    <button id="btn_theme" title="Alterar Tema">Dark</button>
+    <h1>Atividades</h1>
+    <div class="content">
+        <form action="" name="form">
+            <div class="cell">
+                <label for="field_nome_atividade">Atividade</label>
+                <br>
+                <input class="field-text" type="text" name="nome_atividade" id="field_nome_atividade" placeholder="Nome da Atividade">
+            </div>
+            <div class="cell">
+                <label for="field_descricao">Descrição</label>
+                <br>
+                <textarea class="field-text" name="descricao" id="field_descricao" cols="30" rows="10" placeholder="Descrição da Atividade"></textarea>
+            </div>
+            <div class="cell">
+                <button class="btn" id="btn_add" type="button">Adicionar</button>
+                <button class="btn" id="btn_cancel" type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>

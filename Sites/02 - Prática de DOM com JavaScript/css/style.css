@@ -1,0 +1,245 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg_body);
+    color: var(--color_body);
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    background: var(--bg_content);
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px auto;
+    transition: 400ms;
+}
+
+.cell {
+    margin: 10px;
+}
+
+.field-text {
+    padding: 1%;
+    margin-top: 5px;
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 20px;
+    max-height: 30vh;
+    font-size: medium;
+    border: none;
+}
+
+.field-text:hover {
+    opacity: 0.8;
+}
+
+.field-text:focus {
+    outline-style: none;
+}
+
+.btn, label {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.btn {
+    color: var(--branco);
+    height: 30px;
+    width: 20vw;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+#btn_add {
+    background: var(--verde);
+}
+
+#btn_cancel {
+    background: var(--vermelho);
+}
+
+#btn_theme {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 5px;
+    right: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: small;
+    font-weight: bold;
+    background: var(--bg_btn_theme);
+}
+
+#btn_theme:hover {
+    background: var(--verde);
+}
+
+/*
+    definindo variáveis para as cores
+*/
+
+:root {
+    --roxo-escuro: #282141;
+    --roxo-escuro-opaco: rgba(40, 33, 65, 0.8);
+    --roxo-claro: #483d8b;
+    --roxo-claro-opaco: rgba(71, 61, 139, 0.8);
+    --branco: white;
+    --verde: #129e12;
+    --vermelho: #a71111;
+    --ciano: cyan;
+    --preto: #111111;
+}
+
+/*
+    Tema Claro
+*/
+.light-theme {
+    --bg_body: var(--roxo-claro);
+    --bg_popup: var(--roxo-claro-opaco);
+    --color_body: var(--preto);
+    --bg_content: var(--branco);
+    --bg_btn_theme: var(--branco);
+    --bg_footer: var(--branco);
+    --link_footer: var(--preto);
+}
+
+/*
+    Tema Escuro
+*/
+.dark-theme {
+    --bg_body: var(--roxo-escuro);
+    --bg_popup: var(--roxo-escuro-opaco);
+    --color_popup: var(--preto);
+    --color_body: var(--branco);
+    --bg_content: var(--preto);
+    --bg_footer: var(--preto);
+    --link_footer: var(--branco);
+}
+
+/*
+    defindo classe para os cards
+*/
+
+/*
+    definindo as propriedades dos pop'ups
+*/
+.modalDialog {
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--bg_popup);
+    color: var(--color_popup);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.modalDialog:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.modalDialog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.close {
+    background-color: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -12px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover {
+    background-color: #b50909;
+}
+
+/*
+    definindo as propriedades do footer (rodapé)
+*/
+footer {
+    width: 90%;
+    height: fit-content;
+    margin: 0px auto;
+}
+
+footer .footer-text {
+    width: 85%;
+    height: 75px;
+    padding: 1%;
+    margin: 5px auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    background: var(--bg_footer);
+    color: var(--color_footer);
+    transition: 400ms;
+}
+
+footer .footer-text:hover {
+    width: 90%;
+}
+
+footer .footer-text h3, footer .footer-text a {
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer .footer-text a {
+    text-decoration: none;
+    color: var(--link_footer);
+}
+
+footer .footer-text a:hover {
+    color: var(--verde);
+}
+
+footer .footer-text img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: right;
+    bottom: 10vh;
+}
+
+footer .footer-text img:hover {
+    opacity: 0.8;
+}
